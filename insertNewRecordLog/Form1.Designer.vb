@@ -38,6 +38,8 @@ Partial Class Form1
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnInsert = New System.Windows.Forms.Button()
         Me.btnNew = New System.Windows.Forms.Button()
+        Me.lblUser = New System.Windows.Forms.Label()
+        Me.lblOpenLog = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblCid
@@ -188,11 +190,34 @@ Partial Class Form1
         Me.btnNew.Text = "New"
         Me.btnNew.UseVisualStyleBackColor = True
         '
+        'lblUser
+        '
+        Me.lblUser.AutoSize = True
+        Me.lblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUser.Location = New System.Drawing.Point(379, 59)
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Size = New System.Drawing.Size(250, 36)
+        Me.lblUser.TabIndex = 18
+        Me.lblUser.Text = "User Information"
+        '
+        'lblOpenLog
+        '
+        Me.lblOpenLog.AutoSize = True
+        Me.lblOpenLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOpenLog.Location = New System.Drawing.Point(581, 561)
+        Me.lblOpenLog.Name = "lblOpenLog"
+        Me.lblOpenLog.Size = New System.Drawing.Size(113, 18)
+        Me.lblOpenLog.TabIndex = 19
+        Me.lblOpenLog.Text = "Open Log Table"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(849, 589)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(849, 610)
+        Me.Controls.Add(Me.lblOpenLog)
+        Me.Controls.Add(Me.lblUser)
         Me.Controls.Add(Me.btnNew)
         Me.Controls.Add(Me.btnInsert)
         Me.Controls.Add(Me.btnNext)
@@ -232,4 +257,6 @@ Partial Class Form1
     Friend WithEvents btnNext As Button
     Friend WithEvents btnInsert As Button
     Friend WithEvents btnNew As Button
+    Friend WithEvents lblUser As Label
+    Friend WithEvents lblOpenLog As Label
 End Class

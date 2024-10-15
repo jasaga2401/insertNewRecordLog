@@ -113,4 +113,11 @@ Public Class Form1
         End Using
 
     End Sub
+
+    Private Sub lblOpenLog_Click(sender As Object, e As EventArgs) Handles lblOpenLog.Click
+
+        log.Show()
+        Me.Hide()
+
+    End Sub
 End Class
